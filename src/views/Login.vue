@@ -82,14 +82,14 @@ export default {
   width: 100%;
   height: 100%;
   background: #000
-    url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560642627827&di=b680ee05ef1a18c7e189a01df0023e47&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F5928029fc55664ef201dc551a0d631540a31002e.jpg)
+    url(../assets/4.jpeg)
     no-repeat center;
-  background-size: 100% auto;
+  background-size: auto 100%;
 
   .formBox {
     position: fixed;
-    top: 20%;
-    right: 20%;
+    top: 35%;
+    right: 40%;
     width: 300px;
     height: 255px;
     padding: 0 30px 20px;

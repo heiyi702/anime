@@ -99,20 +99,23 @@ export default {
   width: 100%;
   height: 100%;
   background: #000
-    url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1560644841987&di=20a8226e217155b69d7c73b358eaa460&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2F0328b9ccee325ab896d5fe8a477cbc7e2402d60b.jpg)
+    url(../assets/9.jpeg)
     no-repeat center;
   background-size: 100% auto;
   overflow: hidden;
 
   .formBox {
-    margin: 10% auto 0;
+    // margin: 20% auto 0;
+    position: absolute;
+    top: 20%;
+    right: 15%;
     width: 400px;
     height: 400px;
     padding: 0 30px 20px;
     border-radius: 8px;
     border: 1px solid #eee;
     background: #fff;
-    opacity: 0.95;
+    opacity: 0.9;
 
     .title {
       padding: 15px 0;
