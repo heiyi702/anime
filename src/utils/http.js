@@ -85,7 +85,7 @@ instance.interceptors.request.use(
         // 后台根据携带的token判断用户的登录情况，并返回给我们对应的状态码
         // 而后我们可以在响应拦截器中，根据状态码进行一些统一的操作。
         // const token = store.state.token;
-        if (window.location.pathname !== "/login" && window.location.pathname !== '/register') {
+        if (window.location.pathname !== "/login" && window.location.pathname !== '/register' && window.location.pathname !== '/test') {
             let hasLogin = localStorage.getItem('hasLogin');
             if (!hasLogin || hasLogin != 'true') {
                 toLogin()
@@ -94,6 +94,7 @@ instance.interceptors.request.use(
         }
         const token = state.token;
         token && (config.headers.Authorization = token);
+        console.log('--------------', config)
         return config;
     },
     error => Promise.error(error))
@@ -122,7 +123,7 @@ instance.interceptors.response.use(
                 content: `我没网了！！`,
                 okText: '刷新',
                 onOk() {
-                    router.replace({ name: 'refresh' })
+                    router.replace({ name: 'test' })
                 }
             });
             return Promise.reject(error);
