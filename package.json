@@ -11,7 +11,7 @@
     "core-js": "^2.6.5",
     "docx-preview": "^0.1.14",
     "iview": "^3.4.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "md5": "^2.2.1",
     "qs": "^6.7.0",
     "register-service-worker": "^1.6.2",
